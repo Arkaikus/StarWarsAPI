@@ -11,5 +11,5 @@ class Planet(models.Model):
 class Film(models.Model):
     title = models.CharField(max_length=255)
     prelude = models.CharField(max_length=255)
-    characters = models.ManyToManyField(Character, related_name='films')
-    planets = models.ManyToManyField(Planet, related_name='films')
+    characters = models.ManyToManyField(Character, related_name='films', blank=True)
+    planets = models.ManyToManyField(Planet, related_name='films', blank=True)

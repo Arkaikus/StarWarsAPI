@@ -21,4 +21,7 @@ dj-migrate:
 dj-populate:
 	python app\manage.py populate
 
+dj-test:
+	python app\manage.py test api
+
 deploy: stop run

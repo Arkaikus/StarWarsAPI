@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # AUTH    
     'django.contrib.sites',
     'allauth',
+    'allauth.account',
     'dj_rest_auth',
     'rest_framework.authtoken',
     'dj_rest_auth.registration',    
@@ -58,6 +59,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'api',
 ]
+
+SITE_ID=1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -141,6 +144,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
